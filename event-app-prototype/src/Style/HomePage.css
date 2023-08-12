@@ -1,0 +1,11 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 80px;
+}
+
+.interestBox{
+   width: 300px;
+   height: 300px;
+}
+
