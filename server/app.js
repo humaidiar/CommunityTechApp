@@ -6,4 +6,14 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-app.get('/', (req, res) => {});
+app.get('/users/:id', (req, res) => {});
+
+app.post('/users/:id', (req, res) => {});
+
+app.get('/events', (req, res) => {});
+
+app.get('/events/:id', (req, res) => {});
+
+app.get('/communities/:id', (req, res) => {});
+
+app.get('/communities/:id', (req, res) => {});
