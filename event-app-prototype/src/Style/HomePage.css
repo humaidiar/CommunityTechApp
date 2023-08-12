@@ -1,0 +1,94 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 80px;
+}
+
+.sub{
+    margin-top: 200px;
+}
+
+.interestBox {
+    width: 300px;
+    height: 400px;
+    background: #F1F2F6;
+    border-radius: 20px;
+}
+
+.interestBox .interestImg {
+    background-color: rgb(72, 72, 72);
+    height: 40%;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.interestBox .interestImg .interestIcon {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 190px;
+}
+
+.interestBox .interestContent {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 20px 20px;
+    justify-content: flex-end;
+
+}
+
+.attendAndincomingEvent {
+    display: flex;
+    justify-content: space-between;
+    /* To push the items to the edges */
+    align-items: center;
+    /* To vertically center the items */
+}
+
+.attendEvent,
+.incomingEvent {
+    padding: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+    /* Add some padding for better visual appearance */
+}
+
+.attendEvent {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    margin-right: 15px;
+}
+
+.attendEvent img {
+    width: 20px;
+    /* Set the width of the image as needed */
+    margin-right: 10px;
+    /* Add some spacing between the image and the text */
+}
+
+.joinBtn {
+    width: 60px;
+    height: 30px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
