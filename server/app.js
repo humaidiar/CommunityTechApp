@@ -5,10 +5,10 @@ const port = 5001;
 
 const { Pool } = require('pg');
 const pool = new Pool({
-  user: 'username',
-  host: 'localhost',
-  database: 'd',
-  password: 'pass',
+  user: 'postgres',
+  host: '172.20.10.159',
+  database: 'postgres',
+  password: 'postgres',
   port: 5432,
 });
 
@@ -16,9 +16,43 @@ app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 
+const users = [{
+  "name": "Juniper Zhou", 
+  "age": 24,
+  "university": "University of Auckland",
+  "email": "jzhou@uoa.ac.nz",
+  "interests": ["Art", "Boardgames", "Theatre"],
+  "languages": ["Mandarin", "English"]
+}];
+
+const communities = [{
+  "hobby": "Classical Music",
+  "active_Users": 25
+},{
+  "hobby": "Theatre",
+  "active_Users": 34
+},{
+  "hobby": "Fun Runs & Walks",
+  "active_Users": 17
+},{
+  "hobby": "Dance",
+  "active_Users": 23
+},{
+  "hobby": "Comedy",
+  "active_Users": 32
+},{
+  "hobby": "Charity, Fundraisers",
+  "active_Users": 16
+},{
+  "hobby": "Family Entertainment",
+  "active_Users": 33
+}
+]
 //user, community, event
 
 app.get('/user/:id', async (req, res) => {
+  const user = users.find(u => u.id === req.params.id);
+  res.send(user);
   const result = await pool.query('SELECT * FROM user WHERE id = $1', [
     req.params.id,
   ]);
@@ -35,7 +69,7 @@ app.post('/user/:id', async (req, res) => {
 });
 
 app.get('/events', async (req, res) => {
-  const result = await pool.query('SELECT * FROM event');
+  const result = await pool.query('SELECT * FROM events');
   res.send(result.rows[0]);
 });
 
