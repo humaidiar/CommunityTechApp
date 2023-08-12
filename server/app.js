@@ -81,5 +81,6 @@ app.get('/eventfinda-events', async (req, res) => {
       },
     }
   );
+  console.log(response.data);
   res.send(response.data);
 });
