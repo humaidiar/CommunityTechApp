@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const got = require('got');
+import * as db from './db/index.js'
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
@@ -53,4 +54,14 @@ app.get('/communities/:id', async (req, res) => {
   res.send(result.rows[0]);
 });
 
-app.get('/eventfinda-api', async (req, res) => {});
+app.get('/eventfinda-api', async (req, res) => {
+  const {data} = await got.get('https://api.eventfinda.co.nz/v2/events.json?rows=2', {
+    headers: {
+      
+    }
+	json: {
+		hello: 'world'
+	}
+}).json();
+console.log(data)
+});
