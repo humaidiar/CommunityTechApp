@@ -58,7 +58,7 @@ app.get('/communities/:id', async (req, res) => {
   res.send(result.rows[0]);
 });
 
-app.get('/eventfinda-api', async (req, res) => {
+app.get('/eventfinda-events', async (req, res) => {
   //   let user = "summeroftechcreatecamp"
   //   let pass = "tcr5sxb84vxj"
   //   const {data} = await got.get('https://api.eventfinda.co.nz/v2/events.xml', {
