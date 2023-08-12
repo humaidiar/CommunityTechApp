@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const request = require('request')
-
+const got = require('got');
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
@@ -54,8 +53,4 @@ app.get('/communities/:id', async (req, res) => {
   res.send(result.rows[0]);
 });
 
-app.get('/eventfinda-api', async (req, res) => {
-
-  
-
-})
+app.get('/eventfinda-api', async (req, res) => {});
