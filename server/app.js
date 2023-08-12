@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000;
-const got = require('got');
+const axios = require('axios');
+const port = 5001;
 
 const { Pool } = require('pg');
 const pool = new Pool({
@@ -13,7 +13,7 @@ const pool = new Pool({
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Server listening on port ${port}`);
 });
 
 //user, community, event
@@ -68,5 +68,18 @@ app.get('/eventfinda-api', async (req, res) => {
   // }).json();
   // console.log(data)
 
-  var spawn = require('child_process').spawn;
+  const username = 'summeroftechcreatecamp';
+  const password = 'tcr5sxb84vxj';
+
+  const credentials = Buffer.from(`${username}:${password}`).toString('base64');
+
+  const response = await axios.get(
+    'https://api.eventfinda.co.nz/v2/events.json',
+    {
+      headers: {
+        Authorization: `Basic ${credentials}`,
+      },
+    }
+  );
+  res.send(response.data);
 });
