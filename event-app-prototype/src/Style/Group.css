@@ -1,3 +1,4 @@
+
 .groupContainer {
     background-color: #EFF1FF !important;
     width: 100%;
@@ -27,30 +28,30 @@
 }
 
 .groupContainer .groupContent .groupHeader button {
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    height: 40px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .groupContainer .groupContent {
-    padding: 30px 150px;
+  padding: 30px 150px;
 }
 
 .groupContainer .groupContent .groupInfo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .groupContainer .groupContent .groupInfo img {
-    width: 30px;
-    margin-right: 20px;
+  width: 30px;
+  margin-right: 20px;
 }
 
 .groupContainer .groupContent .groupInfo h2 {
@@ -81,27 +82,28 @@
 .eventBox .eventTitle {
     font-size: 30px;
     font-weight: 600;
-
 }
 
 .eventBox .locationBox {
-    display: flex;
-    align-items: center;
-    /* margin-top: 10px; */
+  display: flex;
+  align-items: center;
+  /* margin-top: 10px; */
 }
 
 .eventBox .locationBox img {
+
     width: 15px;
     margin-right: 10px;
+
 }
 
 .eventBox .bottmInfo .eventInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding: 0 60px 0 0px;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 60px 0 0px;
+  padding-bottom: 30px;
 }
 
 
@@ -131,3 +133,4 @@
     border-radius: 5px;
     width: 100px
 }
+
