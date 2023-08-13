@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './NavBar';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/scrollbar";
 import '../Style/HomePage.css'
-// import { Pagination } from 'swiper/modules';
+import { Link, useLocation } from 'react-router-dom';
 import peopleIcon from '../Images/people.png'
 
 const Home = () => {
     const [isLogin, setIsLogin] = React.useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        const passedData = location.state?.data ?? false;
+        setIsLogin(passedData);
+        console.log(location.state);
+
+    }, [])
 
     return (
         <div>
@@ -60,7 +66,7 @@ const Home = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button className="joinBtn">Join</button>
+                                            <Link to='/group' className="joinBtn">Join</Link>
 
                                         </div>
                                     </SwiperSlide>

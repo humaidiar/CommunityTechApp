@@ -1,3 +1,9 @@
+.groupContainer{
+    background-color: #EFF1FF !important;
+    width: 100%;
+    height: 100%;
+}
+
 .groupContainer .groupBk{
     width: 100%;
     height: 300px;
@@ -61,7 +67,7 @@
     width: 100%;
 }
 
-.swiperSlide{
+.EventSlide{
     background-color: #6b6767;
     border-radius: 10px;
     width: 500px !important; 

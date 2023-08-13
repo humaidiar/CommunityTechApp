@@ -43,7 +43,7 @@ const Group = () => {
                         {Array.from({ length: 10 }).map((_, index) => {
                             return (
 
-                                <SwiperSlide className="swiperSlide" key={index}>
+                                <SwiperSlide className="swiperSlide EventSlide" key={index}>
                                     <div className="eventBox">
                                         <h3 className='eventDate'>Sunday, August 13 | 8:00 AM NZST</h3>
                                         <h1 className='eventTitle'>Milkyway Meet-up</h1>
