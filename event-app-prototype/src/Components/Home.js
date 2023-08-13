@@ -12,7 +12,7 @@ import '../Style/HomePage.css'
 import peopleIcon from '../Images/people.png'
 
 const Home = () => {
-    const [isLogin, setIsLogin] = React.useState(true);
+    const [isLogin, setIsLogin] = React.useState(false);
 
     return (
         <div>
@@ -52,7 +52,7 @@ const Home = () => {
                                                 {/* <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> */}
                                                 <div className='attendAndincomingEvent'>
                                                     <div className='attendEvent'>
-                                                        <img src={peopleIcon} alt=''/>
+                                                        <img src={peopleIcon} alt='' />
                                                         <p>10 Members</p>
                                                     </div>
                                                     <div className='incomingEvent'>
@@ -105,7 +105,7 @@ const Home = () => {
                                                 {/* <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> */}
                                                 <div className='attendAndincomingEvent'>
                                                     <div className='attendEvent'>
-                                                        <img src={peopleIcon} alt=''/>
+                                                        <img src={peopleIcon} alt='' />
                                                         <p>10 Members</p>
                                                     </div>
                                                     <div className='incomingEvent'>
@@ -151,7 +151,7 @@ const Home = () => {
                                         <div className="interestBox">
                                             <div className="interestImg">
                                                 <div className="interestIcon">
-                                                Outdoor
+                                                    Outdoor
                                                 </div>
                                             </div>
                                             <div className="interestContent">
@@ -159,7 +159,7 @@ const Home = () => {
                                                 {/* <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> */}
                                                 <div className='attendAndincomingEvent'>
                                                     <div className='attendEvent'>
-                                                        <img src={peopleIcon} alt=''/>
+                                                        <img src={peopleIcon} alt='' />
                                                         <p>10 Members</p>
                                                     </div>
                                                     <div className='incomingEvent'>
@@ -185,13 +185,60 @@ const Home = () => {
 
                 </div>
 
-
-
-
             ) : (
-                <div>Home when not logged in</div>
+                <div className='centeredContainer'>
+                    <div className='notLoginPage'>
+                        <div className='header'>Find your passion & interest and connect with others students</div>
+                        <Swiper
+                            slidesPerView={3}
+                            spaceBetween={30}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            //  modules={[Pagination]}
+                            className="mySwiper"
+                        >
+                            {/* List of Tetimoial */}
+
+                            {Array.from({ length: 10 }).map((_, index) => {
+                                return (
+
+                                    <SwiperSlide className="swiperSlide" key={index}>
+                                        <div className="interestBox">
+                                            <div className="interestImg">
+                                                <div className="interestIcon">
+                                                    Outdoor
+                                                </div>
+                                            </div>
+                                            <div className="interestContent">
+                                                <h3>Outdoor</h3>
+                                                {/* <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> */}
+                                                <div className='attendAndincomingEvent'>
+                                                    <div className='attendEvent'>
+                                                        <img src={peopleIcon} alt='' />
+                                                        <p>10 Members</p>
+                                                    </div>
+                                                    <div className='incomingEvent'>
+                                                        <p>18 Incoming Event</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button className="joinBtn">Join</button>
+
+                                        </div>
+                                    </SwiperSlide>
+
+
+                                );
+                            })}
+
+                        </Swiper>
+
+                    </div>
+                </div>
             )}
         </div>
+
     );
 }
 

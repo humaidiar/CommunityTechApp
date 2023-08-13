@@ -1,0 +1,128 @@
+.groupContainer .groupBk{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(38, 36, 36);
+}
+
+.groupContainer .groupContent .groupHeader
+{
+    /* font-size: 40px; */
+    display: flex;
+    font-weight: 600;
+    color: #000000;
+    margin: 20px 0px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.groupContainer .groupContent .groupHeader h1{
+    font-size: 30px;
+    margin-right: 30px;
+   
+}
+
+.groupContainer .groupContent .groupHeader button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.groupContainer .groupContent {
+    padding: 30px 150px;
+}
+
+.groupContainer .groupContent .groupInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.groupContainer .groupContent .groupInfo img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.groupContainer .groupContent .groupInfo h2{
+    font-size: 18px;
+}
+
+
+.eventBox{
+    padding-left: 20px;
+}
+
+.mySwiper{
+    width: 100%;
+}
+
+.swiperSlide{
+    background-color: #6b6767;
+    border-radius: 10px;
+    width: 500px !important; 
+}
+
+.eventBox .eventDate{
+    font: 12px;
+    color: #dadada;
+
+}
+
+.eventBox .eventTitle{
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.eventBox .locationBox {
+    display: flex;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+
+.eventBox .locationBox img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.eventBox .bottmInfo .eventInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 60px 0 0px;
+    padding-bottom: 30px;
+}
+
+
+.eventBox .bottmInfo .eventInfo .attend{
+    display: flex;
+    align-items: center;
+}
+
+.eventBox .bottmInfo .eventInfo .attend .spotLeft{
+    /* width: 20px; */
+    display: flex;
+    margin-left: 10px;
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.eventBtn button {
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 5px;
+    width: 100px
+    
+}
