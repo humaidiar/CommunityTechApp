@@ -76,11 +76,59 @@ const Group = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+                    <h2>Up coming activities</h2>
+
+                    <Swiper
+                        slidesPerView={4}
+                        spaceBetween={30}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        //  modules={[Pagination]}
+                        className="mySwiper"
+                    >
+                        {/* List of Tetimoial */}
+
+                        {Array.from({ length: 10 }).map((_, index) => {
+                            return (
+
+                                <SwiperSlide className="swiperSlide EventSlide" key={index}>
+                                    <div className="eventBox">
+                                        <h3 className='eventDate'>Sunday, August 13 | 8:00 AM NZST</h3>
+                                        <h1 className='eventTitle'>Milkyway Meet-up</h1>
+                                        <div className='locationBox'>
+                                            <img src={pin} alt='' />
+                                            <p>Mount Eden, Aukland</p>
+
+                                        </div>
+                                        <div className='bottmInfo'>
+                                            <div className='eventInfo'>
+                                                <div className="attend">
+                                                    <h3>8 attendees</h3>
+                                                    <div className='spotLeft'>
+                                                        <h3> 2 spot left</h3>
+                                                    </div>
+                                                </div>
+                                                <div className='eventBtn'>
+                                                    <button>Going</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+
+
+                            );
+                        })}
+
+                    </Swiper>
+
+                </div>
+
+
+            </div>
+
         </div>
       </div>
     </div>

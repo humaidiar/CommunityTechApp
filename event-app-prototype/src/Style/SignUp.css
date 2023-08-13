@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #ECEFFF;
     height: 100vh;
 }
 
@@ -60,7 +61,7 @@
 }
 
 .signUpButtons button, .signUpButtons .creatAccBtn {
-    background-color: #000000;
+    background-color: #27187E;
     color: #FFFFFF;
     border: none;
     text-decoration: none;

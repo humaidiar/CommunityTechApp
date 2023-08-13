@@ -1,3 +1,6 @@
+body{
+    background-color: #EFF1FF;
+}
 .questionInterest {
     /* display: flex; */
     position: relative;
@@ -6,6 +9,7 @@
     margin: 0 auto;
     width: 100%;
     height: 100%;
+   
 }
 
 .questionInterest .questionInterestHeader{
@@ -43,14 +47,15 @@
     margin: 0 auto;
     border-radius: 10px;
     cursor: pointer;
+    color: #27187E;
     margin: 10px;
-    border: 1px solid #000;
+    border: 1px solid #27187E;
     transition: all 0.3s ease-in-out;
 }
 
 .questionInterestBody .YesInterested {
-    background-color: #000000;
-    color: #fff;
+    background-color: #27187E;
+    color: #fff !important;
 
 }
 
@@ -64,9 +69,10 @@
     margin-top: 10%;
 }
 
-.questionInterest .questionInterestFooter button {
+.questionInterest .questionInterestFooter .btn {
     border: none;
-    background-color: #fff;
+    text-decoration: none;
+    color: #000;
     margin: 10px;
 }
 
