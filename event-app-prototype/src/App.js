@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Home';
 import SignUp from './Components/SignUp';
 import QuestionInterest from './Components/QuestionInterest';
+import Group from './Components/Group';
 
 const App = () => {
   return (

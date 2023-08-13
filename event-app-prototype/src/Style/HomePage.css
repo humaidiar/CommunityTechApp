@@ -3,6 +3,28 @@
     flex-direction: column;
     margin: 30px 80px;
 }
+.centeredContainer{
+    margin: 0 150px;
+}
+.notLoginPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; 
+}
+.mySwiper{
+    width: 100%;
+}
+
+
+.notLoginPage .header {
+    font-size: 40px;
+    width:50%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
 
 .sub{
     margin-top: 200px;
@@ -36,7 +58,7 @@
     align-items: center;
     justify-content: center;
     top: 10px;
-    right: 190px;
+    left: 50%;
 }
 
 .interestBox .interestContent {
