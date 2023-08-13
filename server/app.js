@@ -2,15 +2,18 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 const port = 5001;
+const cors = require('cors');
 
-const { Pool } = require('pg');
-const pool = new Pool({
-  user: 'postgres',
-  host: '172.20.10.159',
-  database: 'postgres',
-  password: 'postgres',
-  port: 5432,
-});
+// const { Pool } = require('pg');
+// const pool = new Pool({
+//   user: 'postgres',
+//   host: '172.20.10.159',
+//   database: 'postgres',
+//   password: 'postgres',
+//   port: 5432,
+// });
+
+app.use(cors());
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
