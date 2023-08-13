@@ -1,9 +1,19 @@
 import React, { useState } from 'react'
 import '../Style/QuestionInterest.css'
+import { Link } from 'react-router-dom';
 
 function QuestionInterest() {
-    const [interest, setInterest] = useState([{ "name": "Photograpghy", "isInterested": false }, { "name": "Outdoor", "isInterested": false }, { "name": "Crafting", "isInterested": false }, { "name": "Gaming", "isInterested": false }, { "name": "Bowling", "isInterested": false }, { "name": "Swimming", "isInterested": false }]);
-
+    const [interest, setInterest] = useState([
+        { name: 'Classical Music', isInterested: false },
+        { name: 'Theatre', isInterested: false },
+        { name: 'Fun Runs & Works', isInterested: false },
+        { name: 'Dance', isInterested: false },
+        { name: 'Netball', isInterested: false },
+        { name: 'Comedy', isInterested: false },
+        { name: 'Charity', isInterested: false },
+        { name: 'Fundraisers', isInterested: false },
+        { name: 'Family Entertainment', isInterested: false },
+      ]);
 
     const handleInterest = (index) => {
 
@@ -29,8 +39,8 @@ function QuestionInterest() {
                 </div>
             </div>
             <div className='questionInterestFooter'>
-                <button className='nextBtn'>Next</button>
-                <button className='skipBtn'>Skip</button>
+                <Link  to='/' state={{data: true}} className='nextBtn btn'>Next</Link>
+                <Link className='skipBtn btn'>Skip</Link>
             </div>
         </div>
     )

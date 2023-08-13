@@ -1,7 +1,8 @@
 .homePage {
     display: flex;
     flex-direction: column;
-    margin: 30px 80px;
+    padding: 30px 80px;
+    background-color: #EFF1FF;
 }
 .centeredContainer{
     margin: 0 150px;
@@ -27,7 +28,7 @@
 }
 
 .sub{
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 .interestBox {
@@ -35,10 +36,13 @@
     height: 400px;
     background: #F1F2F6;
     border-radius: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .interestBox .interestImg {
-    background-color: rgb(72, 72, 72);
+    background-image: url('../Images/dome-charity.jpg');
     height: 40%;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
@@ -103,7 +107,8 @@
 .joinBtn {
     width: 60px;
     height: 30px;
-    background-color: #000000;
+    text-decoration: none;
+    background-color: #27187E;
     color: #fff;
     border-radius: 5px;
     font-size: 14px;
