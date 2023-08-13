@@ -54,6 +54,7 @@
   padding-left: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center
 }
 
 .mySwiper {
