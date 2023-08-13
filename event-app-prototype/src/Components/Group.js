@@ -72,6 +72,7 @@ const Group = () => {
                         </div>
                         <div className='eventBtn'>
                           <button>Going</button>
+                          <p></p>
                         </div>
                       </div>
                     </div>
